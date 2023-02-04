@@ -1,1 +1,1 @@
-# ChangeNormal.github.io
+# 这是第二次使用hugo搭建我的个人博客，收获良多，再接再厉！
