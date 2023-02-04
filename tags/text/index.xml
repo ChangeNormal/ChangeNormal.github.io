@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>text on Example Site</title>
+        <title>text on Libin&#39;s Site</title>
         <link>https://ChangeNormal.github.io/tags/text/</link>
-        <description>Recent content in text on Example Site</description>
+        <description>Recent content in text on Libin&#39;s Site</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
+        <language>zh-cn</language>
         <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ChangeNormal.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Placeholder Text</title>
         <link>https://ChangeNormal.github.io/p/placeholder-text/</link>
