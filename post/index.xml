@@ -6,14 +6,16 @@
         <description>Recent content in Posts on Libin&#39;s Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 04 Feb 2023 15:08:07 +0800</lastBuildDate><atom:link href="https://ChangeNormal.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 04 Feb 2023 21:52:18 +0800</lastBuildDate><atom:link href="https://ChangeNormal.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>First Post</title>
         <link>https://ChangeNormal.github.io/p/first-post/</link>
-        <pubDate>Sat, 04 Feb 2023 15:08:07 +0800</pubDate>
+        <pubDate>Sat, 04 Feb 2023 21:52:18 +0800</pubDate>
         
         <guid>https://ChangeNormal.github.io/p/first-post/</guid>
-        <description>&lt;h1 id=&#34;这是我的第一篇文章&#34;&gt;这是我的第一篇文章&lt;/h1&gt;
-</description>
+        <description>&lt;p&gt;对于博客我其实在2021年就已经有过搭建，当时经同学介绍使用的是Hexo，如今我换成了Hugo，感觉用起来不错。&lt;/p&gt;
+&lt;h2 id=&#34;学习hugo搭建的一天&#34;&gt;学习Hugo搭建的一天&lt;/h2&gt;
+&lt;p&gt;在开始之前你需要有：Git相关的基础知识，markdown语言，Github账号&lt;/p&gt;
+&lt;p&gt;首先你需要下载Git,Hugo&lt;/p&gt;</description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
