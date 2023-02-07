@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='此刻是全新的开始，加油！'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='此刻是全新的开始，加油！接下来我将介绍如何搭建一个属于自己的个人博客。'>
 <title>First Post</title>
 
 <link rel='canonical' href='https://ChangeNormal.github.io/p/first-post/'>
 
 <link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='First Post'>
-<meta property='og:description' content='此刻是全新的开始，加油！'>
+<meta property='og:description' content='此刻是全新的开始，加油！接下来我将介绍如何搭建一个属于自己的个人博客。'>
 <meta property='og:url' content='https://ChangeNormal.github.io/p/first-post/'>
 <meta property='og:site_name' content='Libin&#39;s Site'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='blog' /><meta property='article:published_time' content='2023-02-04T21:52:18&#43;08:00'/><meta property='article:modified_time' content='2023-02-04T21:52:18&#43;08:00'/><meta property='og:image' content='https://ChangeNormal.github.io/p/first-post/12.jpg' />
 <meta name="twitter:title" content="First Post">
-<meta name="twitter:description" content="此刻是全新的开始，加油！"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="此刻是全新的开始，加油！接下来我将介绍如何搭建一个属于自己的个人博客。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ChangeNormal.github.io/p/first-post/12.jpg' />
     </head>
     <body class="
@@ -217,29 +217,7 @@
         
 
         <div class="menu-bottom-section">
-                <li id="i18n-switch">  
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
-                        
-                            <option value="https://ChangeNormal.github.io/" selected>English</option>
-                        
-                            <option value="https://ChangeNormal.github.io/zh-cn/" >中文</option>
-                        
-                            <option value="https://ChangeNormal.github.io/ar/" >عربي</option>
-                        
-                    </select>
-                </li>
-            
+ 
             
             
                 <li id="dark-mode-toggle">
@@ -288,7 +266,28 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#学习hugo搭建的一天">学习Hugo搭建的一天</a></li>
+    <li><a href="#一搭建个人博客的意义">一、搭建个人博客的意义</a></li>
+    <li><a href="#二准备工作">二、准备工作</a></li>
+    <li><a href="#三什么是github-pages">三、什么是GitHub Pages？</a></li>
+    <li><a href="#四什么是hugo">四、什么是Hugo?</a></li>
+    <li><a href="#五网站搭建的基本思路">五、网站搭建的基本思路</a></li>
+    <li><a href="#六创建github仓库">六、创建GitHub仓库</a>
+      <ol>
+        <li><a href="#6-1-创建博客源仓库">6-1 创建博客源仓库</a></li>
+      </ol>
+    </li>
+    <li><a href="#七克隆博客源仓库到本地">七、克隆博客源仓库到本地</a></li>
+    <li><a href="#八使用hugo创建网站">八、使用Hugo创建网站</a>
+      <ol>
+        <li><a href="#9-1-选择hugo主题">9-1 选择Hugo主题</a></li>
+        <li><a href="#9-2-安装hugo主题">9-2 安装Hugo主题</a></li>
+        <li><a href="#9-3-配置hugo主题">9-3 配置Hugo主题</a></li>
+      </ol>
+    </li>
+    <li><a href="#十用hugo创建文章">十、用Hugo创建文章</a></li>
+    <li><a href="#十一本地调试和预览">十一、本地调试和预览</a></li>
+    <li><a href="#十二发布内容">十二、发布内容</a></li>
+    <li><a href="#reference">Reference</a></li>
   </ol>
 </nav>
         </div>
@@ -333,7 +332,7 @@
     
         
         <h3 class="article-subtitle">
-            此刻是全新的开始，加油！
+            此刻是全新的开始，加油！接下来我将介绍如何搭建一个属于自己的个人博客。
         </h3>
         
     </div>
@@ -369,7 +368,7 @@
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -385,9 +384,533 @@
     
     
     <p>对于博客我其实在2021年就已经有过搭建，当时经同学介绍使用的是Hexo，如今我换成了Hugo，感觉用起来不错。</p>
-<h2 id="学习hugo搭建的一天">学习Hugo搭建的一天</h2>
+<h1 id="学习hugo个人博客搭建github-pages">学习Hugo个人博客搭建+GitHub Pages</h1>
 <p>在开始之前你需要有：Git相关的基础知识，markdown语言，Github账号</p>
-<p>首先你需要下载Git,Hugo</p>
+<h2 id="一搭建个人博客的意义">一、搭建个人博客的意义</h2>
+<ul>
+<li>你可以将平时学习的技术记录到博客中防止遗忘</li>
+<li>分享技术给需要的人</li>
+<li>面试工作的时候作为一个加分项</li>
+</ul>
+<h2 id="二准备工作">二、准备工作</h2>
+<ul>
+<li>下载Git和Hugo的最新版本</li>
+<li>下载地址请自行Google，自主查找的过程也是提升自己的重要手段</li>
+<li>注册一个Github账号</li>
+<li>下载VS Code代码编辑器</li>
+</ul>
+<h2 id="三什么是github-pages">三、什么是GitHub Pages？</h2>
+<p><a class="link" href="https://pages.github.com/"  target="_blank" rel="noopener"
+    >GitHub Pages</a> 是一组静态网页集合(Static Web Page)，这些静态网页由 <a class="link" href="https://github.com/"  target="_blank" rel="noopener"
+    >GitHub</a> 托管(host)和发布，所以是 GitHub + Pages。</p>
+<h2 id="四什么是hugo">四、什么是Hugo?</h2>
+<p><a class="link" href="https://gohugo.io/"  target="_blank" rel="noopener"
+    >Hugo</a> 是用Go语言写的静态网站生成器(Static Site Generator)。可以把Markdown文件转化成HTML文件。</p>
+<p>安装方式：</p>
+<ol>
+<li>
+<p>查阅 Hugo 安装指南：Install Hugo | Hugo，找到对应系统的安装操作。 基本上都是使用各个包工具安装，本人 Win10，比较嫌麻烦就直接下载使用。</p>
+</li>
+<li>
+<p>打开 Github 中的 Hugo 库，打开右侧的 Realeases，下载最新的版本，本次下载为：hugo_extended_0.82.0_Windows-64bit.zip 下载 extened 版本是因为有些主题的需要利用进行 SCSS/SASS 构建，如果下普通版就可能会报错显示： you need the extended version to build SCSS/SASS</p>
+</li>
+<li>
+<p>解压后，将其中的 hugo.exe 放到指定的安装目录，比如 D:\softwares\Hugo\bin，然后将该目录添加到系统环境变量（win+R → sysdm.cpl → 高级 → 环境变量 → 系统变量 Path）的 Path 下。</p>
+</li>
+<li>
+<p>打开命令行，输入 hugo version，显示版本号即为安装成功</p>
+</li>
+</ol>
+<h2 id="五网站搭建的基本思路">五、网站搭建的基本思路</h2>
+<ol>
+<li>创建2个GitHub仓库
+<ul>
+<li>博客源仓库：储存所有的Blog文件</li>
+<li>GitHub Pages仓库：将网页部署在GitHub Pages</li>
+</ul>
+</li>
+<li>将在<strong>博客源仓库</strong>中Hugo生成的静态HTML文件部署到远端<strong>GitHub Pages仓库</strong>中。</li>
+</ol>
+<h2 id="六创建github仓库">六、创建GitHub仓库</h2>
+<h3 id="6-1-创建博客源仓库">6-1 创建博客源仓库</h3>
+<ol>
+<li>命名博客源仓库</li>
+<li>✔勾选Public,设置为公开仓库</li>
+<li>✔勾选添加README文件</li>
+</ol>
+<p><img src="/p/first-post/1.png"
+	width="309"
+	height="363"
+	srcset="/p/first-post/1_hu5337003af7e7bb442efb1e786a964b52_15069_480x0_resize_box_3.png 480w, /p/first-post/1_hu5337003af7e7bb442efb1e786a964b52_15069_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="添加仓库"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="85"
+		data-flex-basis="204px"
+	
+></p>
+<p>注意：仓库名称需要添加为自己的Github用户名.github.io</p>
+<p><img src="/p/first-post/2.png"
+	width="1099"
+	height="893"
+	srcset="/p/first-post/2_hubbd78d5d7e4df91483e0d73e3f64d78e_60747_480x0_resize_box_3.png 480w, /p/first-post/2_hubbd78d5d7e4df91483e0d73e3f64d78e_60747_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="创建页面"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="123"
+		data-flex-basis="295px"
+	
+></p>
+<h2 id="七克隆博客源仓库到本地">七、克隆博客源仓库到本地</h2>
+<ol>
+<li>
+<p>打开想要在本地储存项目的文件夹（🌰: 我的项目的文件夹是 <code>Myblog</code> )</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd project
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>克隆<strong>博客源仓库</strong>到项目文件夹，克隆时使用的HTTPS仓库链接在这里查看：</p>
+</li>
+</ol>
+<p><img src="/p/first-post/3.png"
+	width="1022"
+	height="290"
+	srcset="/p/first-post/3_huc2842dbe9f30cadabbfbdaa82c932e93_25978_480x0_resize_box_3.png 480w, /p/first-post/3_huc2842dbe9f30cadabbfbdaa82c932e93_25978_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="352"
+		data-flex-basis="845px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/miawithcode/cuttontail.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/first-post/5.png"
+	width="1320"
+	height="864"
+	srcset="/p/first-post/5_hu1ef31e369fa8aba49f333a97d339f688_66319_480x0_resize_box_3.png 480w, /p/first-post/5_hu1ef31e369fa8aba49f333a97d339f688_66319_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="152"
+		data-flex-basis="366px"
+	
+></p>
+<h2 id="八使用hugo创建网站">八、使用Hugo创建网站</h2>
+<ol>
+<li>进入刚刚克隆下来的<strong>博客源仓库</strong>文件夹（比如：我的博客源仓库文件夹名是 <code>cuttontail</code>，则<code>cd cuttontail</code> ），在这个文件夹里用Hugo创建一个网站文件夹。</li>
+<li>用Hugo创建网站文件夹的命令是 <code>hugo new site 网站名字</code>。(比如，我的命名是 <code>cuttontail-blog</code>)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd cuttontail
+</span></span><span class="line"><span class="cl">hugo new site cuttontail-blog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/first-post/4.png"
+	width="1320"
+	height="864"
+	srcset="/p/first-post/4_hud72aebaf2b7ef75e3d65c6da5ce86cb1_111118_480x0_resize_box_3.png 480w, /p/first-post/4_hud72aebaf2b7ef75e3d65c6da5ce86cb1_111118_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="152"
+		data-flex-basis="366px"
+	
+></p>
+<ol start="3">
+<li>用Hugo创建网站共有7个文件夹和一个文件，这些文件分别代表：</li>
+</ol>
+<p><img src="/p/first-post/6.png"
+	width="844"
+	height="398"
+	srcset="/p/first-post/6_hu0fc5be7d5e33ff2a9a2a16b1431c7ff8_30903_480x0_resize_box_3.png 480w, /p/first-post/6_hu0fc5be7d5e33ff2a9a2a16b1431c7ff8_30903_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="212"
+		data-flex-basis="508px"
+	
+></p>
+<ul>
+<li><strong>archetypes</strong>：存放用hugo命令新建的md文件应用的front matter模版</li>
+<li><strong>content</strong>：存放内容页面，如Blog</li>
+<li><strong>layouts</strong>：存放定义网站的样式，写在<code>layouts</code>文件下的样式会覆盖安装的主题中的 <code>layouts</code>文件同名的样式</li>
+<li><strong>static</strong>：存放所有静态文件，如图片</li>
+<li><strong>data</strong>：存放创建站点时Hugo使用的其他数据</li>
+<li><strong>public</strong>：存放Hugo生成的静态网页</li>
+<li><strong>themes</strong>：存放主题文件</li>
+<li><strong>config.toml</strong>：网站配置文件</li>
+</ul>
+<img decoding="async" src="6.png" width="80%">
+<p style="font-size:20px"> &#128512; &#128516; &#128525; &#128151;
+<hr>
+## 九、安装和配置Hugo主题
+<h3 id="9-1-选择hugo主题">9-1 选择Hugo主题</h3>
+<p>可以从<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    > Hugo社区提供的主题</a>中选择一个喜欢的主题应用在自己的网站中。</p>
+<h3 id="9-2-安装hugo主题">9-2 安装Hugo主题</h3>
+<ol>
+<li>
+<p>一般在你选择的Hugo主题的文档中，都会给出「如何安装这个主题」的命令，比如我选用的 <strong>Hugo Bear Blog</strong> 的文档中给出：</p>
+<p><img src="/p/first-post/7.png"
+	width="1320"
+	height="329"
+	srcset="/p/first-post/7_hu4332ecd08f1c08301294a004cd3371cf_59037_480x0_resize_box_3.png 480w, /p/first-post/7_hu4332ecd08f1c08301294a004cd3371cf_59037_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="401"
+		data-flex-basis="962px"
+	
+></p>
+</li>
+<li>
+<p>打开刚刚用Hugo创建的网站文件夹（我的是cuttontail-blog），在终端输入文档中给出的命令。</p>
+<p><img src="/p/first-post/8.png"
+	width="1320"
+	height="866"
+	srcset="/p/first-post/8_hu6dae7e75fc4440ba67183a501bb31c2b_103766_480x0_resize_box_3.png 480w, /p/first-post/8_hu6dae7e75fc4440ba67183a501bb31c2b_103766_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="152"
+		data-flex-basis="365px"
+	
+></p>
+</li>
+<li>
+<p>这时可以看到在themes文件夹中，多出了刚刚安装的主题文件，代表主题安装成功。</p>
+</li>
+</ol>
+<h3 id="9-3-配置hugo主题">9-3 配置Hugo主题</h3>
+<ol>
+<li>一般安装的Hugo主题的文件结构中都会有 <code>exampleSite</code> 文件夹，也是你在选择主题时参考的网站demo。</li>
+<li><strong>把 <code>exampleSite</code> 的文件复制到站点目录，在此基础上进行基础配置</strong>。 非常推荐这么做，这样做能解决很多「为什么明明跟教程一步一步做下来显示的结果却不一样呢？」的疑惑。（这主要是因为不同的主题模版配置文件不同导致的。）</li>
+<li>在把<code>exampleSite</code>文件复制到站点目录时，根据<strong>对应</strong>文件夹进行复制文件</li>
+</ol>
+<ul>
+<li>比如<code>exampleSite</code>下有 <code>content</code> ,  <code>static</code> 和 <code>config.toml</code> 3个文件，就找到你自己的站点跟目录下这对应的三个文件。在把对应目录中的内容分别复制过去。</li>
+</ul>
+<ol start="4">
+<li>
+<p>其中在复制config.toml的内容时要注意：</p>
+<ul>
+<li>
+<p>baseURL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">baseURL = &#34;https://example.com/&#34; #把https://example.com/改成自己的域名	      
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你没有在GitHub Pages中设置自定义域名，这里的域名应该填 <code>https://&lt;username&gt;.github.io/</code> （⚠️注意：最后的<code>/</code>不要忘了加）</p>
+</li>
+<li>
+<p>themes</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">themes = &#34;你选择的主题名字&#34;。 #这一行命令代表启用你安装的主题
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 <code>config.toml</code> 中输入这行命令才能启用安装的主题，不过一般这行命令在你复制 <code>exampleSite</code> 的配置文件信息时，主题作者已经写好了这行。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="十用hugo创建文章">十、用Hugo创建文章</h2>
+<p>用Hugo创建一篇文章的命令是：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new xxx.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用这个命令创建的Markdown文件会套用 <code>archetypes</code> 文件夹中的front matter模版，在空白处用Markdown输入blog内容。</p>
+<p><img src="/p/first-post/9.png"
+	width="955"
+	height="465"
+	srcset="/p/first-post/9_hudfd94bb68276d369e7cf3f2c76bfb177_61526_480x0_resize_box_3.png 480w, /p/first-post/9_hudfd94bb68276d369e7cf3f2c76bfb177_61526_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="205"
+		data-flex-basis="492px"
+	
+></p>
+<p><img src="/p/first-post/10.png"
+	width="949"
+	height="274"
+	srcset="/p/first-post/10_hu4bc009cbc0e6538d37bd1d43a2d8b9b9_8894_480x0_resize_box_3.png 480w, /p/first-post/10_hu4bc009cbc0e6538d37bd1d43a2d8b9b9_8894_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="346"
+		data-flex-basis="831px"
+	
+></p>
+<p>其中：<code>draft: true</code>代表这篇文章是一个草稿，Hugo不会显示草稿，要在主页显示添加的文章，可以设置 <code>draft: false</code>；或者直接删掉这行。</p>
+<h2 id="十一本地调试和预览">十一、本地调试和预览</h2>
+<ol>
+<li>
+<p>在发布到网站前可以在本地预览网站或内容的效果，运行命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/first-post/11.png"
+	width="953"
+	height="455"
+	srcset="/p/first-post/11_hu5cb031086ca31e4d37327b108499b8c7_79956_480x0_resize_box_3.png 480w, /p/first-post/11_hu5cb031086ca31e4d37327b108499b8c7_79956_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="209"
+		data-flex-basis="502px"
+	
+></p>
+</li>
+<li>
+<p>也可以在本地编辑Markdown文件时，通过 <code>hugo server</code> 来实时预览显示效果。</p>
+</li>
+<li>
+<p><code>hugo server</code> 运行成功后，可以在 <code>http://localhost:1313/</code> 中预览网站</p>
+</li>
+</ol>
+<h2 id="十二发布内容">十二、发布内容</h2>
+<ol>
+<li>
+<p><code>hugo</code> 命令可以将你写的Markdown文件生成静态HTML网页，生成的HTML文件默认存放在 <code>public</code> 文件夹中。</p>
+<p><img src="/p/first-post/13.png"
+	width="942"
+	height="425"
+	srcset="/p/first-post/13_huefaa44a8f0cfbe608e081ddfa1ac2a63_107486_480x0_resize_box_3.png 480w, /p/first-post/13_huefaa44a8f0cfbe608e081ddfa1ac2a63_107486_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="221"
+		data-flex-basis="531px"
+	
+></p>
+</li>
+<li>
+<p>因为<code>hugo</code> 生成的静态HTML网页文件默认存放在 <code>public</code> 文件中，所以推送网页内容只需要把 <code>public</code> 中的HTML网页文件发布到GitHub Pages仓库中。</p>
+</li>
+<li>
+<p>将 <code>public</code> 文件夹初始化为Git仓库，并设置默认主分支名为 <code>main</code>。✨这么做的原因是：</p>
+<ul>
+<li>
+<p>GitHub创建仓库时生成的默认主分支名是 <code>main</code></p>
+</li>
+<li>
+<p>用 <code>git init</code> 初始化Git仓库时创建的默认主分支名是 <code>master</code></p>
+</li>
+<li>
+<p>将 <code>git init</code> 创建的 <code>master</code> 修改成 <code>main</code> ，再推送给远端仓库 <code>&lt;username&gt;.github.io</code> ，这样才不会报错。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git init -b main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/first-post/14.png"
+	width="1320"
+	height="960"
+	srcset="/p/first-post/14_hu2e8a22cc38ddf95169219ab87af424a4_41457_480x0_resize_box_3.png 480w, /p/first-post/14_hu2e8a22cc38ddf95169219ab87af424a4_41457_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="137"
+		data-flex-basis="330px"
+	
+></p>
+</li>
+</ul>
+</li>
+<li>
+<p>将 <code>public</code> 文件夹关联远程GitHub Pages仓库，使用GitHub Pages仓库的SSH链接。</p>
+<ul>
+<li>
+<p>⚠️ 注意：要让SSH链接起作用，需要你添加过SSH Key。</p>
+</li>
+<li>
+<p><strong>GitHub Pages仓库的SSH链接可以在这里查看：</strong></p>
+<p><img src="/p/first-post/15.png"
+	width="1049"
+	height="298"
+	srcset="/p/first-post/15_hu2a47be5856b3be04844e1cdacc8397e5_26777_480x0_resize_box_3.png 480w, /p/first-post/15_hu2a47be5856b3be04844e1cdacc8397e5_26777_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="352"
+		data-flex-basis="844px"
+	
+></p>
+</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote add origin git@github.com:ChangeNormal/ChangeNormal.github.io.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>
+<p>推送<strong>博客源仓库</strong>的 <code>public</code> 文件夹中的HTML网页文件到<strong>GitHub Pages仓库</strong>中，在推送仓库内容前要先用 <code>git pull --rebase origin main</code> 和远端仓库同步，否则会报错。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git pull --rebase origin main 
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;...(修改的信息)&#34; 
+</span></span><span class="line"><span class="cl">git push origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>转到GitHub中查看<strong>GitHub Pages仓库</strong>中是否存在刚刚推送的文件，存在则代表推送成功。</p>
+<p><img src="/p/first-post/16.png"
+	width="1265"
+	height="521"
+	srcset="/p/first-post/16_hu2e1a209d5c3bd82d73696a5f352732e4_35892_480x0_resize_box_3.png 480w, /p/first-post/16_hu2e1a209d5c3bd82d73696a5f352732e4_35892_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="242"
+		data-flex-basis="582px"
+	
+></p>
+</li>
+<li>
+<p>如果你没有设置自定义域名，且把 <code>comfig.toml</code> 文件中的 <code>baseURL</code> 设置为 <code>https://&lt;username&gt;.github.io</code>，就可以在 <a class="link" href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/"  target="_blank" rel="noopener"
+    >https://username.github.io</a> 中查看刚刚创建的网站。 ( 👀 我使用的是自定义域名，所以这里用我的自定义域名查看。)</p>
+<p><img src="/p/first-post/17.png"
+	width="1914"
+	height="878"
+	srcset="/p/first-post/17_hu2b1f2fe5821a1c214f1d0c2ab19e0174_1301471_480x0_resize_box_3.png 480w, /p/first-post/17_hu2b1f2fe5821a1c214f1d0c2ab19e0174_1301471_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="217"
+		data-flex-basis="523px"
+	
+></p>
+</li>
+<li>
+<p>后续的更新步骤：</p>
+<ol>
+<li>创建你的文章.md</li>
+<li>用 <code>hugo server</code> 在本地预览，满意后准备发布。</li>
+<li>运行 <code>hugo</code> 命令将Markdown文件生成HTML文件。</li>
+<li>将修改先提交至<strong>博客源仓库</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;...(修改的信息)&#34;
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>打开public文件</li>
+<li>运行：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;...(修改的信息)&#34; 
+</span></span><span class="line"><span class="cl">git pull --rebase origin main #可选,如果远端仓库与本地一致，则不需要合并。
+</span></span><span class="line"><span class="cl">git push origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>如果你使用的是自定义域名，第一次推送成功后，GitHub Pages 仓库会生成CNAME文件，所以第二次推送还要再合并一次：<code>git pull --rebase origin main</code>。后续的更新Blog就不再需要使用这个命令了。（根据实际情况使用）</li>
+</ul>
+</li>
+<li>
+<p>发布内容除了手动发布，还能使用GitHub Action自动发布。但我认为刚刚搭建好一个网站，立刻就用GitHub Action有些Overwhelming，先手动发布，熟练之后再开始使用GitHub Action自动发布会比较好。</p>
+</li>
+</ol>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><em><a class="link" href="https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"  target="_blank" rel="noopener"
+    >Github Pages + Hugo 搭建个人博客</a></em></li>
+<li><em><a class="link" href="https://www.runoob.com/markdown/md-tutorial.html"  target="_blank" rel="noopener"
+    >菜鸟教程</a></em></li>
+<li><em><a class="link" href="https://www.pseudoyu.com/en/2022/05/29/deploy_your_blog_using_hugo_and_github_action/"  target="_blank" rel="noopener"
+    >Hugo + Github Action,搭建你的博客自动发布系统</a></em></li>
+</ul>
 </section>
 
 
@@ -425,60 +948,18 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
-<style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
-    }
-</style>
-
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
-</script>
-
     
 
     <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
         2023 Libin&#39;s Site
     </section>
     
     <section class="powerby">
+        
+            李彬的小站 <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
