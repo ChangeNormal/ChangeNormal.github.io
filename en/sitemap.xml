@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ChangeNormal.github.io/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -20,11 +20,8 @@
                 href="https://ChangeNormal.github.io/"
                 />
   </url><url>
-    <loc>https://ChangeNormal.github.io/tags/blog/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
-  </url><url>
     <loc>https://ChangeNormal.github.io/categories/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -41,17 +38,14 @@
                 href="https://ChangeNormal.github.io/categories/"
                 />
   </url><url>
-    <loc>https://ChangeNormal.github.io/p/first-post/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
-  </url><url>
-    <loc>https://ChangeNormal.github.io/categories/first-post/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+    <loc>https://ChangeNormal.github.io/tags/datastructure/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
   </url><url>
     <loc>https://ChangeNormal.github.io/post/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
   </url><url>
     <loc>https://ChangeNormal.github.io/tags/</loc>
-    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -67,6 +61,33 @@
                 hreflang="en"
                 href="https://ChangeNormal.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://ChangeNormal.github.io/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/tags/%E5%A4%A7o%E8%A1%A8%E7%A4%BA%E6%B3%95/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3-%E7%AC%AC%E4%B8%80%E6%97%A5/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/categories/%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/tags/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2023-02-07T22:20:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/tags/blog/</loc>
+    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/p/first-post/</loc>
+    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
+  </url><url>
+    <loc>https://ChangeNormal.github.io/categories/first-post/</loc>
+    <lastmod>2023-02-04T21:52:18+08:00</lastmod>
   </url><url>
     <loc>https://ChangeNormal.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
