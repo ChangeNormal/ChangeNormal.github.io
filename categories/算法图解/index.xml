@@ -7,17 +7,18 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Tue, 07 Feb 2023 22:20:57 +0800</lastBuildDate><atom:link href="https://ChangeNormal.github.io/categories/%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>数据结构算法学习-算法图解-第一日</title>
-        <link>https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3-%E7%AC%AC%E4%B8%80%E6%97%A5/</link>
+        <title>数据结构算法学习-算法图解</title>
+        <link>https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3/</link>
         <pubDate>Tue, 07 Feb 2023 22:20:57 +0800</pubDate>
         
-        <guid>https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3-%E7%AC%AC%E4%B8%80%E6%97%A5/</guid>
-        <description>&lt;img src="https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3-%E7%AC%AC%E4%B8%80%E6%97%A5/2.png" alt="Featured image of post 数据结构算法学习-算法图解-第一日" /&gt;&lt;p&gt;数据结构是一门基础学科，你只有将数据结构知识掌握牢固才能够在以后的工作中得心应手，而且现在各大厂第一道就是笔试卡了不少初级程序员，所以作为计算机的从业者不得不重视数据结构算法的学习！而我则是打算先将数据结构书面知识思想掌握再去力扣进行系统刷题，是因为我觉得这样的学习更加科学，更加有效率也更加扎实。&lt;/p&gt;
-&lt;h1 id=&#34;初识算法-二分查找及大o表示法&#34;&gt;初识算法-二分查找及大O表示法&lt;/h1&gt;
+        <guid>https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3/</guid>
+        <description>&lt;img src="https://ChangeNormal.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3/2.png" alt="Featured image of post 数据结构算法学习-算法图解" /&gt;&lt;p&gt;数据结构是一门基础学科，你只有将数据结构知识掌握牢固才能够在以后的工作中得心应手，而且现在各大厂第一道就是笔试卡了不少初级程序员，所以作为计算机的从业者不得不重视数据结构算法的学习！而我则是打算先将数据结构书面知识思想掌握再去力扣进行系统刷题，是因为我觉得这样的学习更加科学，更加有效率也更加扎实。&lt;/p&gt;
+&lt;h1 id=&#34;一初识算法-二分查找及大o表示法&#34;&gt;一、初识算法-二分查找及大O表示法&lt;/h1&gt;
 &lt;p&gt;开始学习前你最好需要有：数据结构知识，基础编程语言经验（Python即可）&lt;/p&gt;
-&lt;h2 id=&#34;一二分查找&#34;&gt;一、二分查找&lt;/h2&gt;
+&lt;h2 id=&#34;1-二分查找&#34;&gt;1. 二分查找&lt;/h2&gt;
 &lt;p&gt;二分查找？没错，就是你像的那样！其实还真的就是从中间的数开始找起，如果没有找到对应的数就将&lt;code&gt;low&lt;/code&gt;和&lt;code&gt;high&lt;/code&gt;的值进行修改，当你要寻找的值小于&lt;code&gt;mid&lt;/code&gt;处值时我们令&lt;code&gt;high = mid - 1&lt;/code&gt;,而当(这里你要找的值设为&lt;code&gt;item&lt;/code&gt;)&lt;code&gt;item &amp;gt; mid&lt;/code&gt;时我们令&lt;code&gt;low = mid + 1&lt;/code&gt;(此处应当注意是&amp;gt;,&amp;lt;号而不带等号,可以先自行思考为何，后面我会作出解释)。而当&lt;code&gt;low &amp;lt;= high&lt;/code&gt;时&lt;code&gt;while&lt;/code&gt;循环将会继续进行，直至&lt;code&gt;low &amp;gt; high&lt;/code&gt;跳出循环&lt;code&gt;return mid或者None&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;我可以形象的用一个例子来告诉你为什么有的时候我们使用二分查找会更合适。&lt;/p&gt;
+&lt;p&gt;二分查找比简单查找要快得多，同样的问题可以将40亿规模缩小到32个！仅当列表是有序的时候二分查找才管用。二分查找的运行时间为对数时间O(log n)，简单查找为线性时间O(n)。&lt;/p&gt;
+&lt;h3 id=&#34;11-示例代码&#34;&gt;1.1 示例代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -60,7 +61,128 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;binary_search&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;my_list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;2-大o表示法&#34;&gt;2. 大O表示法&lt;/h2&gt;
+&lt;p&gt;大O表示法是一种特殊的表示法，指出算法的速度有多快。二分查找和简单查找的运行时间增速不同，也就是说，随着元素数量的增加，二分查找需要的额外时间并不多，而简单查找需要的额外时间却很多。因此，随着列表的增长（问题规模的扩大）二分查找的速度会比简单查找快得多。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;大O表示法指的并非以秒为单位的速度。大O表示法让你能够比较操作数，它指出了算法运行时间的增速。&lt;/li&gt;
+&lt;li&gt;大O表示法指出了最糟情况下的运行时间。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面按照从快到慢的顺序列出了你经常会遇到的5种大O运行时间。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O(log n)对数时间，二分查找&lt;/li&gt;
+&lt;li&gt;O(n)线性时间，简单查找&lt;/li&gt;
+&lt;li&gt;O(n * log n)快速排序，一种较快的排序算法&lt;/li&gt;
+&lt;li&gt;O(n^2)选择排序，一种速度较慢的排序算法&lt;/li&gt;
+&lt;li&gt;O(n!)旅行商问题解决方案，一种非常慢的算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-小结&#34;&gt;3. 小结&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;算法的速度指的并非时间，而是操作数的增速。&lt;/li&gt;
+&lt;li&gt;谈论算法的速度时，我们说的是随着输入的增加，其运行时间将以什么样的速度增加。&lt;/li&gt;
+&lt;li&gt;算法的运行时间用大O表示法表示。&lt;/li&gt;
+&lt;li&gt;O(log n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;二选择排序&#34;&gt;二、选择排序&lt;/h1&gt;
+&lt;p&gt;本章将介绍两种最基本的数据结构&amp;mdash;数组和链表，学习选择排序算法，选择排序算法是下一章将介绍的快速排序的基石。&lt;/p&gt;
+&lt;h2 id=&#34;1-内存工作原理&#34;&gt;1. 内存工作原理&lt;/h2&gt;
+&lt;p&gt;需要将数据存储到内存时，你请求计算机提供存储空间，计算机给你一个存储地址。需要存储多项数据时，有两种基本方式&amp;mdash;数组和链表。但它们并非都适用于所有的情形，因此知道它们的差别很重要。接下里介绍数组和链表以及它们的优缺点。&lt;/p&gt;
+&lt;h2 id=&#34;2-数组和链表的优缺点&#34;&gt;2. 数组和链表的优缺点&lt;/h2&gt;
+&lt;h3 id=&#34;21-随机读取元素&#34;&gt;2.1 随机读取元素&lt;/h3&gt;
+&lt;p&gt;现在我们编写一个管理待办事项的应用程序，为此需要将这些事项存储在内存中，使用数组意味着所有待办事项在内存中都是相连的。&lt;/p&gt;
+&lt;p&gt;数组的优点也是易于查找，随机读取元素效率很高。但是当你有更多的待办事项时，如果内存不够则会重新申请一块内存地址，这会产生极大的浪费，面对这种问题我们就需要使用链表。&lt;/p&gt;
+&lt;p&gt;链表中的元素可存储在内存的任何地方，链表的每个元素都存储了下一个元素的地址，从而使一系列随机的内存地址串在一起。链表的优势在插入元素方面。而链表不能够随机读取数据，需要从头节点开始依次往后遍历整个链表。&lt;/p&gt;
+&lt;h3 id=&#34;22-中间插入元素&#34;&gt;2.2 中间插入元素&lt;/h3&gt;
+&lt;p&gt;在需要往中间插入元素时，链表更加合适，只需要修改它前面的那个元素指向的地址。而使用数组时，则必须将后面的元素都向后移。如果没有足够的空间，可能还要将整个数组复制到其他地方！&lt;/p&gt;
+&lt;h3 id=&#34;23-删除&#34;&gt;2.3 删除&lt;/h3&gt;
+&lt;p&gt;删除元素时链表也是更好的选择，因为只需修改前一个元素指向的地址即可。使用数组时，删除元素后，必须将后面的元素都向前移。不同于插入，删除元素总能够成功。如果内存中没有足够的空间，插入操作可能失败，但在任何情况下都能够将元素删除。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数组&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;链表&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;读取&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;O(1)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;O(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;插入&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;O(n)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;O(1)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;删除&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;O(n)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;O(1)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;以上是常见数组和链表操作的运行时间。&lt;/p&gt;
+&lt;p&gt;需要指出的是，仅当能够立即访问要删除的元素时，删除操作的运行时间才为O(1)。通常我们都记录了链表的第一个元素和最后一个元素，因此删除这些元素时运行时间为O(1)。&lt;/p&gt;
+&lt;h2 id=&#34;3-选择排序&#34;&gt;3. 选择排序&lt;/h2&gt;
+&lt;p&gt;有了前面的知识，你就可以学习第二种算法&amp;mdash;-选择排序了。&lt;/p&gt;
+&lt;p&gt;学习本节内容你需要掌握：数组、链表和大O表示法&lt;/p&gt;
+&lt;p&gt;假设你的计算机存储了很多乐曲。对于每个乐队，你都记录了其作品被播放的次数。你要将整个列表按播放次数从多到少的顺序排列，从而将你喜欢的乐队排序。我们该怎么做？&lt;/p&gt;
+&lt;p&gt;有一种办法时遍历这个列表，找出作品播放次数最多的乐队，并将该乐队添加到一个新列表中。再次这样做，找出播放次数第二多的乐队。继续这样做，你将得到一个有序表。接下来我们来分析一下这需要多长的时间。别忘了，O(n)时间意味着查看列表中的每个元素一次。要找出播放次数最多的乐队，我们必须检查列表中的每个元素。对于这种时间为O(n)的操作，你需要执行n次。需要总时间为O(n*n)，即O(n^2)。&lt;/p&gt;
+&lt;h3 id=&#34;31-示例代码&#34;&gt;3.1 示例代码&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;findSmallest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;smallest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 存储最小元素&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;smallest_index&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 最小元素索引&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;smallest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;smallest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;smallest_index&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;smallest_index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;selectionSort&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 对数组排序&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;newArr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;smallest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;findSmallest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 找到数组中的最小元素&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;newArr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pop&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smallest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 将其加入到新数组中&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newArr&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;selectionSort&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意：选择排序是一种灵巧的算法，但其速度不是很快。快速排序是一种更快的排序算法，其运行时间为O(n log n)，这将在下一章介绍。&lt;/p&gt;
+&lt;h2 id=&#34;4小结&#34;&gt;4.小结&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机内存犹如一大堆抽屉。&lt;/li&gt;
+&lt;li&gt;需要存储多个元素时，可使用数组或链表&lt;/li&gt;
+&lt;li&gt;数组的元素都在一起。&lt;/li&gt;
+&lt;li&gt;链表的元素是分开的，其中每个元素都存储了下一个元素的地址。&lt;/li&gt;
+&lt;li&gt;数组的读取速度很快。&lt;/li&gt;
+&lt;li&gt;链表的插入和删除速度很快。&lt;/li&gt;
+&lt;li&gt;在同一个数组中，所有元素的类型都必须相同（都为int、double等）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;三递归&#34;&gt;三、递归&lt;/h1&gt;
+&lt;p&gt;本章内容：学习递归，学习如何将问题分成基线条件和递归条件。&lt;/p&gt;
+&lt;p&gt;递归是一种优雅的解决方法&lt;/p&gt;</description>
         </item>
         
     </channel>
